@@ -1,0 +1,22 @@
+.Contact {
+  margin: auto;
+  height: 100vh;
+
+  p {
+    font-size: 2rem;
+    text-align: center;
+    height: 50vh;
+    color: #fff;
+    mix-blend-mode: difference;
+
+    &:first-child {
+      height: 100vh;
+    }
+    
+    a {
+      font-weight: 700;
+      color: #fff;
+      mix-blend-mode: difference;
+    }
+  }
+}

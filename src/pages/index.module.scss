@@ -1,0 +1,85 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+
+  .paper, .portrait {
+    width: 100vw;
+    align-self: center;
+    position: fixed;
+    z-index: -1;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .paper {
+    height: 80vh;
+  }
+
+  .portrait {
+    height: 65vh;
+  }
+
+  .signature {
+    margin: auto;
+    top: 0;
+    position: fixed;
+    height: 100vh;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+}
+
+@media all and (min-width: 600px) {
+  .container {
+    .paper {
+      height: 80vh;
+      width: 85vw;
+    }
+
+    .portrait {
+      height: 90vh;
+
+      img {
+        object-fit: initial;
+      }
+    }
+
+    .signature {
+      height: 100vh;
+      max-width: 40vw;
+      margin-left: 40px;
+
+      img {
+        height: 60%;
+      }
+    }
+  } 
+}
+
+@media (orientation: landscape) {
+  .container {
+    .portrait {
+      height: 100vh;
+      width: 80vw;
+
+      img {
+        // object-fit: cover;
+      }
+    }
+
+    .signature {
+      margin-left: 0px;
+      max-width: 40vw;
+    }
+  }
+}
