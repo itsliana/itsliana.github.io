@@ -37,7 +37,6 @@ class IndexPage extends Component {
 
     return (
       <div onScroll={this.handleScroll} className={classes.container}>
-        <div className={classes.background}></div>
         <div className={classes.paper}><img src={paper}></img></div>
         <div className={classes.portrait}><img src={medusa}></img></div>
         <div className={classes.signature}><img className={height} src={signature}></img></div>
