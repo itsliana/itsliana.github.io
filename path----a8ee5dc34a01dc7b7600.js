@@ -1,0 +1,2 @@
+webpackJsonp([60335399758886],{98:function(e,t){e.exports={data:{site:{siteMetadata:{title:"Liana Birke | Web Developer"}}},layoutContext:{}}}});
+//# sourceMappingURL=path----a8ee5dc34a01dc7b7600.js.map
