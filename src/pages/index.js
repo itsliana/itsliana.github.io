@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import Link from 'gatsby-link';
 import classes from './index.module.scss';
 
 
@@ -11,6 +10,9 @@ import paper from '../../public/static/paper.png';
 class IndexPage extends Component {
   constructor(props) {
     super(props);
+    this.state={
+      scrollPosition: null
+    }
   }
   
   componentDidMount() {
@@ -22,17 +24,24 @@ class IndexPage extends Component {
   };
   
   handleScroll = (event) => {
-    console.log(window.scrollY, event)
+    this.setState({ scrollPosition: window.scrollY})
+
   };
 
   render() {
+    const shrinkOn = 10;
+    let height = [];
+    if (this.state.scrollPosition > shrinkOn) {
+      height.push(classes.minimize)
+    }
+
     return (
       <div onScroll={this.handleScroll} className={classes.container}>
+        <div className={classes.background}></div>
         <div className={classes.paper}><img src={paper}></img></div>
         <div className={classes.portrait}><img src={medusa}></img></div>
-        <div className={classes.signature}><img src={signature}></img></div>
+        <div className={classes.signature}><img className={height} src={signature}></img></div>
         <Contact />
-        {/* <Link to="/page-2/">Go to page 2</Link> */}
       </div>
     )
   }
