@@ -1,3 +1,5 @@
+https://itsliana.github.io (in case the custom root doesn't load for whatever reason)
+
 # Using Gatsby
 [Gatsby](https://www.gatsbyjs.org/) is a static site generator for React. Speed + SEO were my primary concerns so it only made sense. I'm not yet taking advantage of GraphQL but perhaps I will in the future if I ever started a blog. 
 
