@@ -1,4 +1,4 @@
-https://lianuh.com[https://lianuh.com]
+https://lianuh.com
 
 # Features
 ## Cover illustration
