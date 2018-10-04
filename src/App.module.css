@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Cormorant+SC:400,700');
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'Cormorant SC', serif;
+}
+
+.background {
+  padding: 100vh;
+  background-color: #fff;
+  position: fixed;
+  z-index: -1;
+}
+
+.paper, .portrait {
+  width: 100vw;
+  align-self: center;
+  position: fixed;
+  z-index: -1;
+}
+
+.paper img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.portrait img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.paper {
+  height: 80vh;
+}
+
+.portrait {
+  height: 65vh;
+}
+
+.signature {
+  margin: auto;
+  top: 0;
+  position: fixed;
+  height: 100vh;
+}
+
+.signature img {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255,255,255,0.6);
+  transition: all 0.3s;
+}
+
+.signature .minimize {
+  height: 10%;
+  background-color: rgba(255,255,255,0);
+  transition: all 0.3s;
+}
+
+@media all and (min-width: 600px) {
+  .paper {
+    height: 80vh;
+    width: 85vw;
+  }
+
+  .portrait {
+    height: 90vh;
+  }
+
+  .portrait img {
+    object-fit: initial;
+  }
+
+  .signature {
+    height: 100vh;
+    max-width: 40vw;
+    margin-left: 40px;
+  }
+
+  .signature img {
+    height: 60%;
+    background-color: rgba(255,255,255,0)
+  }
+}
+
+@media (min-width: 600px) and (orientation: landscape) {
+  .portrait {
+    height: 100vh;
+    width: 80vw;
+  }
+
+  .signature {
+    margin-left: 0px;
+    max-width: 40vw;
+  }
+}
