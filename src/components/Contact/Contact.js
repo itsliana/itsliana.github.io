@@ -10,7 +10,7 @@ const contact = () => (
     <p><span className={classes.email}>liana.sndrs@gmail.com</span></p>
     <p><a href="//www.linkedin.com/in/lianasanders/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
     <p><a href="//github.com/itsliana" target="_blank" rel="noopener noreferrer">github</a></p>
-    <p><span>My </span><a href="//www.instagram.com/meat__bag/" target="_blank" rel="noopener noreferrer">I am meatbag</a></p>
+    <p><a href="//www.instagram.com/meat__bag/" target="_blank" rel="noopener noreferrer">I am meatbag</a></p>
   </div>
 )
 
