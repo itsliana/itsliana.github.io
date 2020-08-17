@@ -40,10 +40,10 @@ class App extends Component {
     return (
       <React.Fragment>
         <Helmet
-          title='Liana Birke | Web Developer'
+          title='Liana | Software Engineer'
           meta={[
-            { name: 'description', content: 'Hi, I\'m Liana Birke. I\'m a Front-End Web Developer based in the East Coast. I do art on rare occasions.' },
-            { name: 'keywords', content: 'front-end, web, development, developer, frontend, front-end web developer, web developer, frontend web developer, freelance, graphic, design' },
+            { name: 'description', content: 'Hi, I\'m Liana Sanders. I\'m a Front-End Web Developer based in the East Coast. I do art on rare occasions.' },
+            { name: 'keywords', content: 'front-end, engineer, software, frontend, software engineer, web developer, frontend engineer, freelance, graphic, design' },
           ]}
           link={[
             { rel: 'shortcut icon', type: 'image/ico', href: `${favicon}` }
